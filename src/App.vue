@@ -1,19 +1,12 @@
 <template>
   <div class="box">
-    <h1>Hello World</h1>
-    <h3>11</h3>
+    <hr />
+    <SvgIcon name="phone" color="red" width="100px" height="100px"></SvgIcon>
   </div>
 </template>
 
 <script setup lang="ts">
-const a = 100;
-console.log(a);
+import SvgIcon from "@/components/SvgIcon/index.vue";
 </script>
 
-<style scoped>
-.box {
-  width: 600px;
-  height: auto;
-  background-color: red;
-}
-</style>
+<style scoped></style>
