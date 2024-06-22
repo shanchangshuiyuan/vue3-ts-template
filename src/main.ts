@@ -8,11 +8,16 @@ import "element-plus/dist/index.css";
 import zhCn from "element-plus/es/locale/lang/zh-cn";
 //svg图标配置代码
 import "virtual:svg-icons-register";
+//引入全局样式
+import "@/styles/index.scss";
 
 const app = createApp(App);
 //配置element-plus国际化
 app.use(ElementPlus, {
   locale: zhCn,
 });
-app.use(ElementPlus);
+//引入自定义插件对象：注册整个项目全局组件
+import gloablComponents from "@/components/index.ts"
+app.use(gloablComponents)
+
 app.mount("#app");
