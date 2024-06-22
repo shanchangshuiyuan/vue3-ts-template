@@ -17,7 +17,7 @@ app.use(ElementPlus, {
   locale: zhCn,
 });
 //引入自定义插件对象：注册整个项目全局组件
-import gloablComponents from "@/components/index.ts"
-app.use(gloablComponents)
+import gloablComponents from "@/components/index.ts";
+app.use(gloablComponents);
 
 app.mount("#app");

@@ -9,7 +9,7 @@ const allGlobalComponents = {
 //对外暴露插件对象
 export default {
   //必须叫做install
-  install(app: { component: (arg0: string, arg1: any) => void; }) {
+  install(app: { component: (arg0: string, arg1: any) => void }) {
     Object.keys(allGlobalComponents).forEach((key) => {
       app.component(key, allGlobalComponents[key]);
     });

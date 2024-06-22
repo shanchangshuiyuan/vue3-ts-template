@@ -13,7 +13,7 @@ onMounted(() => {
     username: "admin",
     password: "111111",
   });
-  console.log()
+  console.log();
 });
 </script>
 
